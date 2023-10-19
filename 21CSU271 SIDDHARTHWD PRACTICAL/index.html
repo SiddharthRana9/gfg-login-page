@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<style>
+	
+	.all{
+        padding-left: 400px;
+    }
+    .head{
+        padding-left: 525px;
+    }
+	form {
+        width: 500px;
+		border: 3px solid #f1f1f1;
+        
+	}
+    .signin{
+        width: 223px;
+        height: 56px;
+        text-align: center;
+    }
+    .signout{
+        width: 223px;
+        height: 56px;
+        text-align: center;
+        background-color: rgb(181, 178, 178);
+    }
+
+    .top{
+        display: flex;
+        
+    }
+    
+	
+	input[type=text],
+	input[type=password] {
+		width: 100%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		display: inline-block;
+		border: 1px solid #ccc;
+		box-sizing: border-box;
+	}
+    .allb{
+        position: relative;
+    }
+	
+	button {
+        
+		background-color: #4CAF50;
+		color: white;
+		padding: 14px 20px;
+		margin: 8px 0;
+		border: none;
+		cursor: pointer;
+		width: 100%;
+	}
+    .r{
+       background-color: #dd4b39;
+    }
+    .db{
+       background-color: #3b5998;
+      
+    }
+    .b{
+       background-color: #1f88be;
+    }
+    .k{
+       background-color: #191717;
+    }
+	
+	button:hover {
+		opacity: 0.8;
+	}
+    .google{
+        width: 168px;
+        height: 38px;
+        margin-left: 60px;
+    }
+    .facebook{
+        width: 168px;
+        height: 38px;
+    }
+    .linkedin{
+        width: 168px;
+        height: 38px;
+        margin-left: 60px;
+    }
+    .github{
+        width: 168px;
+        height: 38px;
+    }
+	
+	.cancelbtn {
+		width: auto;
+		padding: 10px 18px;
+		background-color: #f44336;
+	}
+	
+	.imgcontainer {
+		text-align: center;
+		margin: 24px 0 12px 0;
+	}
+	
+	img.avatar {
+		width: 10%;
+		border-radius: 50%;
+	}
+	
+	.container {
+		padding: 16px;
+	}
+	
+	span.psw {
+        color: gray;
+		float: right;
+		padding-top: 16px;
+	}
+    p{
+        color: darkgreen;
+        text-align: center;
+        font-weight: bold;
+    }
+	
+	@media screen and (max-width: 300px) {
+		span.psw {
+			display: block;
+			float: none;
+		}
+        
+		.cancelbtn {
+			width: 100%;
+		}
+	}
+</style>
+
+<body>
+
+	<h2 class="head">Please Login To Continue</h2>
+	<div class="all">
+	<form action="/action_page.php">
+        <div class="top">
+            <div class="signin">
+                <h2 >Sign In</h2>
+            </div>
+            <div class="signout">
+             <h2>Sign Up</h2>
+
+            </div>
+
+        </div>
+		
+
+		<div class="container">
+			
+			<input type="text" placeholder="Username or Email" name="uname" required>
+
+			
+			<input type="password" placeholder="Password" name="psw" required>
+            
+            <span class="psw">Forgot password?</span>
+
+			<button type="submit">Sign In</button>
+          
+            <p>------------------------------or-------------------------------</p>
+            <div class="allb">
+            <button class="google r" type="submit">Google</button>
+            <button class="facebook db" type="submit">Facebook</button>
+            <button class="linkedin b" type="submit">Linked In</button>
+            <button class="github k" type="submit">Github</button>
+        </div>
+            <br>
+			<p>Why Create An Account?</p>
+		</div>
+
+		
+	</form>
+</div>
+
+</body>
+
+</html>
